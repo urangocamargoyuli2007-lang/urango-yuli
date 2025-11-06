@@ -1,0 +1,110 @@
+ */
+body {
+    /* Fuente seria y legible para documentos académicos */
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f3f5; /* Fondo muy suave y ligeramente azulado */
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #1f3a5f; /* Azul Marino (Navy) */
+    color: #ffffff;
+    padding: 2rem; /* Más espacio */
+    text-align: center;
+    /* Sombra de prestigio */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Más separación entre ítems del menú */
+    /* Añadimos un fondo blanco para contraste */
+    background-color: #ffffff; 
+    padding: 1rem 0;
+    margin-bottom: 0;
+    border-bottom: 6px solid #c79d33; /* Línea de acento Cobre */
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f3a5f; /* Texto en Navy */
+    font-weight: bold;
+    /* Efecto al pasar el mouse */
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #b8860b; /* Color Cobre al pasar el mouse */
+}
+
+main {
+    padding: 3.5rem; /* Más relleno */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Sección de contenido principal (dos columnas para resumen y más información) */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem; /* Más separación entre columnas */
+}
+
+/* Estilo de las secciones (Cajas de contenido) */
+section {
+    background-color: #ffffff;
+    margin-bottom: 35px; /* Más espacio inferior */
+    padding: 2rem; /* Más relleno */
+    border-radius: 4px; /* Esquinas menos redondeadas para formalidad */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra más sutil y profunda */
+    /* Borde lateral de formalidad */
+    border-left: 6px solid #c79d33; 
+}
+
+/* Títulos de las secciones */
+section h2 {
+    color: #1f3a5f; /* Color del texto del título */
+    border-bottom: 2px solid #c79413; /* Subrayado Cobre */
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sección de galería de imágenes */
+.galeria .imagenes-galeria {
+    /* Cambiado a fila para un diseño más de galería horizontal */
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria img {
+    max-width: 250px; /* Imágenes un poco más grandes */
+    border-radius: 4px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    border: 3px solid #f0f3f5;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    border: 3px solid #b8860b; /* Borde Cobre al pasar el mouse */
+}
+
+/* Testimonios (Usado para bloques destacados como Justificación) */
+.testimonios {
+    background-color: #faf1d6; /* Fondo color crema muy suave */
+    border: 1px solid #b8860b;
+}
+
+.testimonio {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15
